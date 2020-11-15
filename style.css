@@ -122,6 +122,16 @@ nav li a:hover {
     padding: 0.5rem;
 }
 
+/*----------ARTICLE--------------*/
+.article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: grey;
+    opacity: 0.5;
+    height: 300px;
+}
+
 @media (max-width: 1160px) {
     .icon {
       font-size: 2rem;
