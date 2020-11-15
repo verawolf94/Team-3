@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Travel Destinations</title>
+    <link href="style.css" rel="stylesheet"
+    type="text/css, initial-scale=1" />
+  <style>
+    body{
+        bakground-image: url("Images/background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+  </style>
+  </head>
+  <body>
+    <header>
+      <div>
+      <i class="fas fa-plane"></i>
+      <p> Travel Destination</p>
+    
+    <nav>
+    <ul>
+    
