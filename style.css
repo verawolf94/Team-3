@@ -172,7 +172,7 @@ nav li a:hover {
         clear: both;
       }
 }
-h3 *{
+h3{
     box-sizing: border-box;
   }
   .column{
@@ -180,8 +180,9 @@ h3 *{
     width:33%;
     padding: 3px;
   }
-  .column img {
+  .column img{
     height:100px;
   }
+  
 
     
