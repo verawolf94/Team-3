@@ -1,190 +1,102 @@
 * {
-    box-sizing: border-box;
-}
-
-html {
-    margin:0;
-    padding:0;
-}
-body{
-    margin: 5px;
-    padding: 5px;
-    background-image: url("images/indonesia.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color:black;
-    font-family:"baskerville";
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;   
-    height: 100vh;  
-}
-/*---------------HEADER-----------------*/
-header {
-    display:flex;
-    justify-content: space-between;
-    color: yellow;
-    background-color: blue;
-}
-header div {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "roboto";
-    margin: 0 2rem;
-}
-header nav {
-    padding: 1rem 2rem;
-}
-nav ul li{
-    list-style: none;
-    display: inline;
-    letter-spacing: 5px;
-}
-nav li a {
-    padding: 1rem;
-    margin: 1rem;
-    text-decoration: none;
-    color: white;
-    transition: all 250ms ease-in;
-}
-nav li a:hover {
-    background: #ffce14;
-    color:black;
-}
-
-/*---------TEXT IN THE FLEX CONTAINER-------------*/
-.titles {
-    color: white;
-    text-align: center;
-    width: 50vw;
-    margin: 0 auto;
-}
-.titles h1 {
-    font-family: baskerville;
-    font-size: 5rem;
-    margin-bottom: 0;
-    text-shadow: 1px 1px 0 black;
-    color: #E9F319;
-}
-.titles p{
-    letter-spacing: 3px;
-    text-shadow: 1px 1px 0 black;
-    font-size: 15px;
-}
-
-/*---------------------FLEX CONTAINER------------------------*/
-.flex-container{
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    max-width: 80vw;
-}
-
-.flex-container{
-    background-color: aquamarine;
-    margin: 10px;
-    padding: 0.5rem;
-    opacity: 0.5;
-    display: flex;
-    justify-content: space-between;
-    max-width: 350px;
-    max-height: 180px;
-    min-height: 180px;
-    transition: all 250ms ease-out;
-    font-size: 15px;
-}
-.flex-container:hover {
-        background: yellow;
-        transform: translateY(-20%);
-}
-.flex-container{
-    text-decoration: none;
-    padding: 1rem;
-}
-.flex-container h2 {
     margin: 0;
-    margin-bottom: 0;
+    padding: 0;
+    font-family: baskerville;
+}
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/indonesia.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    float:right;
+    list-style: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: yellow;
     color: black;
-    text-align: center;
-    font-size: 40px;
 }
-.flex-container p {
-    margin-top: 1rem;
-    line-height: 1.5rem;
-    text-align: center;
-    font-size: 20px;
+ul li.active a {
+    background-color: white;
+    color: black;
 }
-.text {
-    padding: 0.5rem;
-}
-@media (max-width: 1160px) {
-    .icon {
-      font-size: 2rem;
-      padding: 0.5rem;
-    }
-    .text h3 {
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      margin-bottom: 0;
-      font-size: 1rem;
-    }
-    .text p {
-      margin-top: 1rem;
-      line-height: 1.5rem;
-      text-align: left;
-      font-size: 0.8rem;
-    }
-    nav li a:hover {
-      background: none;
-      color: black;
-    }
-  }
-  @media (max-width: 850px) {
-    body {
-      height: 100%;
-    }
-    .flex-container {
-      flex-direction: column;
-    }
-    .flex-container:hover {
-      background:yellow;
-      transform: none;
-    }
-    /*----------------ARTICLE---------------*/
-    article {
-        float: right;
-        padding: 20px;
-        width: 70%;
-        background-color:rgba(103, 243, 243, 0.747);
-        height: 300px; 
-    }
-    .article h3 {
-        align-items: center;
-    }
-    .article p {
-        text-align: center;
-    }
-    .article:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
+.main{
+    max-width: 1350px;
+    margin: auto;
 }
 
-h3 {
-    box-sizing: border-box;
+.title{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.title h1 {
+    color:white;
+    font-size: 80px;
+    text-shadow: 2px 2px black;
+}
+.title p {
+    letter-spacing: 3px;
+    text-shadow: 1px 1px black;
+    font-size: 15px;
+    color: yellow;
+}
+
+section nav ul{
+    width: 30%;
+    padding: 20px;
+    position: absolute;
+    transform: translate(-50%);
+    text-align: center;
   }
-  .column{
-    float: left;
-    width:33%;
-    padding: 3px;
-  }
-  .column-img {
-    height:100px;
-  }
-   
   
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  section nav ul li{
+      font-size: 30px;
+  }
+  section nav ul p{
+      font-weight: bold;
+  }
 
+  article{
+    padding: 20px;
+    width: 60%;
+    background-color:rgba(103, 243, 243, 0.747);
+    opacity: 0.3;
+    height: 300px; 
+    text-align: center;
+  }
+.container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width:90vw;
+      margin:auto;
+      margin-top: 100px;
+  }
+  .container section{
+      margin-right: 25%;
+  }
+  
     
